@@ -1,0 +1,46 @@
+{
+    "name": "prestashopheaven/build-testing-js",
+    "description": "JavaScript test doubles of the PrestaHaven modules for Vitest: window.prestashop, jQuery, the admin components, runScript and the setup file that resets listeners and globals after every test, with TypeScript types.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George van Engers",
+            "email": "vanengers@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrestaShopHeaven\\Build\\TestingJs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PrestaShopHeaven\\Build\\TestingJs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "prestashopheaven": {
+            "kind": "build",
+            "use-when": "A module has JavaScript or TypeScript tests in _dev/tests (Vitest + jsdom): import the PrestaShop test doubles and use the shared setup file instead of copying _dev/tests/support.",
+            "keywords": [
+                "vitest",
+                "jsdom",
+                "javascript test",
+                "typescript test",
+                "test double",
+                "prestashop global",
+                "jquery",
+                "admin components",
+                "setup file",
+                "runScript"
+            ]
+        }
+    }
+}
