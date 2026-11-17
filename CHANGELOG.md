@@ -2,6 +2,10 @@
 
 The version is the one of the monorepo `mono-build-testing`.
 
+## 1.0.1
+
+No changes: the shared version of the monorepo (build-testing-php 1.0.1).
+
 ## 1.0.0
 
 First version: `_dev/tests/support/` of the 17 modules and `heavenupdater` (scan of 2026-11-07).
